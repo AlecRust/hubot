@@ -12,6 +12,10 @@ has, etc!
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+This chat bot runs on OpenShift. The OpenShift `nodejs` cartridge documentation can be found at:
+
+https://docs.openshift.org/origin-m4/oo_cartridge_guide.html#nodejs
+
 ### Running Hubot Locally
 
 You can test your hubot by running the following, however some plugins will not
