@@ -2,9 +2,7 @@
 
 **Hugh is a chat bot built on the [Hubot](http://hubot.github.com) framework.**
 
-This chat bot runs on OpenShift and Heroku:
-- OpenShift: https://hubot-alecrust.rhcloud.com/
-- Heroku: https://rosie-hubot.herokuapp.com/
+This chat bot runs on OpenShift at: https://hubot-alecrust.rhcloud.com/
 
 The OpenShift `nodejs` cartridge documentation can be found at:
 https://docs.openshift.org/origin-m4/oo_cartridge_guide.html#nodejs
