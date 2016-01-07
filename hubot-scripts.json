@@ -1,4 +1,5 @@
 [
+  "mongo-brain.coffee",
   "dealwithit.coffee",
   "encourage.coffee",
   "insult.coffee",
