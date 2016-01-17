@@ -41,7 +41,7 @@ intensive. The following shell command can be used as a stop gap until an
 easier way to do this has been implemented.
 
     grep -o 'hubot-[a-z0-9_-]\+' external-scripts.json | \
-      xargs -n1 -i sh -c 'sed -n "/^# Configuration/,/^#$/ s/^/{} /p" \
+      xargs -n1 -I {} sh -c 'sed -n "/^# Configuration/,/^#$/ s/^/{} /p" \
           $(find node_modules/{}/ -name "*.coffee")' | \
         awk -F '#' '{ printf "%-25s %s\n", $1, $2 }'
 
@@ -64,7 +64,7 @@ the thing.
 There will inevitably be functionality that everyone will want. Instead of
 writing it yourself, you can use existing plugins.
 
-Hugh is able to load plugins from third-party `npm` packages. This is the
+Hubot is able to load plugins from third-party `npm` packages. This is the
 recommended way to add functionality to your hubot. You can get a list of
 available hubot plugins on [npmjs.com](npmjs) or by using `npm search`:
 
