@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "author": "Alec Rust <me@alecrust.com>",
-  "description": "A simple helpful robot running on OpenShift",
+  "description": "A simple helpful robot running on Heroku",
   "repository": {
     "type": "git",
     "url": "https://github.com/AlecRust/hubot.git"
@@ -28,8 +28,5 @@
   },
   "engines": {
     "node": "0.10.x"
-  },
-  "scripts": {
-    "start": "PORT=$OPENSHIFT_NODEJS_PORT BIND_ADDRESS=$OPENSHIFT_NODEJS_IP HEROKU_URL=$OPENSHIFT_APP_DNS REDIS_URL=redis://:$REDIS_PASSWORD@$OPENSHIFT_REDIS_HOST:$OPENSHIFT_REDIS_PORT HUBOT_SLACK_TOKEN=$HUBOT_SLACK_TOKEN bin/hubot -n Hugh -a slack"
   }
 }
